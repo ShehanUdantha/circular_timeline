@@ -2,9 +2,11 @@
 
 A highly customizable, interactive circular visualization widget for Flutter.
 
-`CircularTimeline` allows you to visualize a full year of data in a compact, aesthetic radial layout. It organizes time into concentric rings—Seasons, Months, and Weeks—and allows you to stack multiple data layers (like activity heatmaps) on the outside.
+`CircularTimeline` allows you to visualize a full year of data in a compact, aesthetic radial layout. It organizes time into concentric rings Seasons, Months, and Weeks and allows you to stack multiple data layers (like activity heatmaps) on the outside.
 
-![App Screenshot](https://raw.githubusercontent.com/ShehanUdantha/circular_timeline/main/doc/preview.png)
+<p align="center">
+<img src="https://github.com/user-attachments/assets/d471dd7d-2e98-474e-9396-b5fc42894705" width="400"/>
+</p>
 
 ## Features
 
