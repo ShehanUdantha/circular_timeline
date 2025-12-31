@@ -1,6 +1,6 @@
 name: circular_timeline
 description: "A highly customizable circular timeline visualization widget for Flutter. Visualize yearly data in seasons, months, and weeks rings."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/ShehanUdantha/circular_timeline
 
 environment:
