@@ -191,7 +191,7 @@ class _CircularTimelineState extends State<CircularTimeline> {
           } else {
             sub =
                 "${date.year}/${date.month}/${date.day}: ${widget.textConfig.noDataText}";
-            color = layer.color.withOpacity(0.5);
+            color = layer.color.withValues(alpha: 0.5);
           }
           break;
         }

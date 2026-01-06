@@ -185,7 +185,7 @@ class TimelinePainter extends CustomPainter {
         if (layer.data.containsKey(key)) {
           double val = layer.data[key]!;
           // Draw the colored data segment
-          Color c = layer.color.withOpacity(val > 30 ? 1.0 : 0.7);
+          Color c = layer.color.withValues(alpha: val > 30 ? 1.0 : 0.7);
           drawArc(currentR, config.dataRingWidth - 2, start, sweep, c);
         } else {
           // Draw the empty slot
