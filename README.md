@@ -74,7 +74,7 @@ CircularTimeline(
     dataRingWidth: 15,
     backgroundColor: Colors.black, // Background of the circle
     monthTextColor: Colors.white,
-    weekRingColor: Colors.grey.withOpacity(0.2),
+    weekRingColor: Colors.grey.withValues(alpha: 0.2),
   ),
 )
 
@@ -118,7 +118,7 @@ _Note: The value (double) determines the opacity of the segment color. Values > 
 
 ### Contributions
 
-Contributions are welcome! If you find a bug or want to add a feature (like animation support or custom segment builders), please feel free to file an issue or submit a pull request on the [GitHub repository](https://www.google.com/search?q=https://github.com/ShehanUdantha/circular_timeline).
+Contributions are welcome! If you find a bug or want to add a feature (like animation support or custom segment builders), please feel free to file an issue or submit a pull request on the [GitHub repository](https://github.com/ShehanUdantha/circular_timeline).
 
 ### License
 
