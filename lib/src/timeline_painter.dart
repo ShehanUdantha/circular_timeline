@@ -26,9 +26,10 @@ class TimelinePainter extends CustomPainter {
 
     // Draw optional background if defined
     if (config.backgroundColor != Colors.transparent) {
-      final bgPaint = Paint()
-        ..color = config.backgroundColor
-        ..style = PaintingStyle.fill;
+      final bgPaint =
+          Paint()
+            ..color = config.backgroundColor
+            ..style = PaintingStyle.fill;
       canvas.drawCircle(center, size.width / 2, bgPaint);
     }
 
@@ -150,8 +151,10 @@ class TimelinePainter extends CustomPainter {
 
       drawArc(currentR, config.weekWidth, start, sweep, config.weekRingColor);
 
+      String label = (i + 1) > 52 ? "" : "${i + 1}";
+
       drawRotatedText(
-        "${i + 1}",
+        label,
         currentR + config.weekWidth / 2,
         start,
         sweep,
