@@ -53,14 +53,23 @@ class _CircularTimelineState extends State<CircularTimeline> {
     if (oldWidget.year != widget.year) _initYearLogic();
     _initConfig();
     _calculateOptimalSize();
+
+    // Whenever the widget rebuilds (e.g., Language Change), we force the center text back to the default Title/Subtitle.
+    // Since 'widget.textConfig' now contains the new language strings,this effectively translates the center text instantly.
+    setState(() {
+      centerLabel = widget.textConfig.centerDefaultTitle;
+      centerSubLabel = widget.textConfig.centerDefaultSubtitle;
+      centerColor = Colors.grey;
+    });
   }
 
   void _initYearLogic() {
-    totalDaysInYear = DateTime(
-      widget.year + 1,
-      1,
-      1,
-    ).difference(DateTime(widget.year, 1, 1)).inDays;
+    totalDaysInYear =
+        DateTime(
+          widget.year + 1,
+          1,
+          1,
+        ).difference(DateTime(widget.year, 1, 1)).inDays;
   }
 
   void _initConfig() {
